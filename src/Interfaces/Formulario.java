@@ -1,4 +1,7 @@
+package src.Interfaces;
 import javax.swing.*;
+import src.MundoProblema.*;
+
 public class Formulario extends JFrame{
     private JLabel label1;
     public Formulario() {
@@ -6,6 +9,12 @@ public class Formulario extends JFrame{
         label1=new JLabel("Hola Mundo.");
         label1.setBounds(10,20,200,30);
         add(label1);
+
+        Nota instanciaNota = new Nota(77);
+
+        //Durante la carga del formulario, mostrar la nota por consola
+        instanciaNota.mostrarNota();       
+
     }
     
     public static void main(String[] ar) {
