@@ -21,9 +21,9 @@ public class Nota {
     public void mostrarNota(){
         
         System.out.println("------------------------");
-        System.out.printf("Nota/100 %d %n",nota100);
-        System.out.printf("Nota/5 %f %n",nota5);
-        System.out.printf("Descripción %s %n",descripcion);
+        System.out.printf("Nota/100 = %d %n",nota100);
+        System.out.printf("Nota/5 = %f %n",nota5);
+        System.out.printf("Descripción =  %s %n",descripcion);
         System.out.println("------------------------");
 
     }

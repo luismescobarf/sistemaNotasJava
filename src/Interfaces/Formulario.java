@@ -8,12 +8,15 @@ public class Formulario extends JFrame{
         setLayout(null);
         label1=new JLabel("Hola Mundo.");
         label1.setBounds(10,20,200,30);
-        add(label1);
+        add(label1);        
 
-        Nota instanciaNota = new Nota(77);
+        //Durante la carga del formulario, instanciar y mostrar nota
+        //Nota instanciaNota = new Nota(77);
+        //instanciaNota.mostrarNota();
 
-        //Durante la carga del formulario, mostrar la nota por consola
-        instanciaNota.mostrarNota();       
+        //Crear una materia durante la carga del formulario (tres cortes por defecto)
+        Materia instanciaMateria = new Materia();
+        instanciaMateria.mostrarInfoMateria();
 
     }
     
