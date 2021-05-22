@@ -44,6 +44,21 @@ public class Materia {
     }
 
     //Métodos
+    public void adicionarNota(int pNota100){
+        
+        //Instanciar la nota
+        Nota notaAdicionada = new Nota(pNota100);
+
+        //Adicionarla a la composición de la materia
+        notas.add(notaAdicionada);
+        
+        //Diagnóstico por consola adición nota textfield
+        System.out.println("Se adicionó la nota!!!");
+        notas.get(notas.size()-1).mostrarNota(); 
+
+    }
+
+
     public void mostrarInfoMateria(){
 
         System.out.println("**------------------------**");

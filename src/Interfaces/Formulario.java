@@ -5,7 +5,8 @@ import src.MundoProblema.*;
 
 public class Formulario extends JFrame implements ActionListener{
     private JLabel label1;
-    private JButton boton1,boton2;
+    private JButton boton1,boton2,botonAdicionarNota;
+    private JTextField campoNota100;
     public Formulario() {
 
         //Establecer ubicación de elementos
@@ -25,6 +26,15 @@ public class Formulario extends JFrame implements ActionListener{
         boton2.setBounds(10,70,100,30);
         boton2.addActionListener(this);
         add(boton2);
+        botonAdicionarNota = new JButton("Adicionar Nota");
+        botonAdicionarNota.setBounds(10,130,100,30);
+        botonAdicionarNota.addActionListener(this);
+        add(botonAdicionarNota);        
+        
+        //Agregar campos de texto
+        campoNota100 = new JTextField();
+        campoNota100.setBounds(10,190,100,30);        
+        add(campoNota100);
 
         //Durante la carga del formulario, instanciar y mostrar nota
         //Nota instanciaNota = new Nota(77);
@@ -43,6 +53,11 @@ public class Formulario extends JFrame implements ActionListener{
         }
         if (e.getSource()==boton2) {
             setTitle("Mujer");
+        }
+        if (e.getSource()==botonAdicionarNota){
+            //instanciaMateria.adicionarNota( Integer.valueOf(campoNota100.getText()) );
+            //Pruebas interacción campo
+            System.out.printf("->Contenido del campo: %s %n",campoNota100.getText() );
         }
     }
     
